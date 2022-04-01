@@ -3,7 +3,7 @@
 using namespace std;
 
 #define MOD 1000000
-int sum[5002];
+int sum[5002] = { 0 };
 
 int solution(string s, int length) {
 	

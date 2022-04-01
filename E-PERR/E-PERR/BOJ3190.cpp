@@ -52,7 +52,7 @@ int main(void) {
 		scol += dy[dir];
 		dq.push_front({ srow, scol });
 
-		if (board[srow][scol] == 2) break;
+		if (board[srow][scol] == 2) break;	// 자신의 몸을 만나면
 		if (board[srow][scol] == 0) {	// 사과 없으면
 			board[dq.back().first][dq.back().second] = 0;
 			dq.pop_back();	// 꼬리 빼기

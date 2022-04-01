@@ -22,6 +22,8 @@ int solution(int n, int s, int a, int b, vector<vector<int>> fares) {
         board[v[1]][v[0]] = v[2];
     }
 
+    //////////////////
+
     for (int i = 1; i <= n; i++)
         for (int j = 1; j <= n; j++)
             for (int k = 1; k <= n; k++)
