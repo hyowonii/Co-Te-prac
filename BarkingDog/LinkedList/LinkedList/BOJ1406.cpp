@@ -11,7 +11,7 @@ int main(void) {
 	string str;
 	cin >> str;	// 문자열
 	for (auto c : str) List.push_back(c);
-	list<char>::iterator cursor = List.end();
+	auto cursor = List.end();
 
 	int M;
 	cin >> M;	// 명령어 개수
