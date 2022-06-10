@@ -38,4 +38,31 @@ int main(void) {
 		ans = min(ans, solve(s, i, cnt));
 
 	cout << ans;
+
+
+	///// 다른 코드
+
+	int a = 0;	// a 개수
+	int ans = s.size();
+
+	for (auto c : s)
+		if (c == 'a') a++;
+
+	for (int i = 0; i < s.size(); i++) {
+		int cnt = a;
+		int temp = 0;
+		for (int j = i; j < i + s.size(); j++) {
+			if (cnt == 0) break;	// 모든 a를 연속으로 묶음
+			if (s[j % s.size()] == 'b') {
+				temp++;
+				cnt--;
+			}
+			else cnt--;
+		}
+
+		ans = min(ans, temp);
+	}
+
+	cout << ans << "\n";
 }
+
