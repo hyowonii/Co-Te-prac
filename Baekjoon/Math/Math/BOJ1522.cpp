@@ -26,6 +26,8 @@ int main(void) {
 
 	cin >> s;
 
+	// 발생할 수 있는 모든 경우 확인
+
 	int cnt = 0;
 	int ans = (int)1e9;
 
