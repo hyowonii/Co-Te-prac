@@ -24,3 +24,4 @@
 | [컬러링북](https://programmers.co.kr/learn/courses/30/lessons/1829) | [코드](E-PERR/E-PERR/pgm_coloringbook.cpp) | [컬러링북](https://shw64.tistory.com/36) | bfs | Lv2 |
 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | [코드](Programmers/String/String/PRO60057.cpp) | [문자열 압축](https://shw64.tistory.com/55?category=1265170) | 문자열 | Lv2 |
 | [단속카메라](https://programmers.co.kr/learn/courses/30/lessons/42884) | [코드](Programmers/Greedy/Greedy/PRO42884.cpp) | [단속카메라](https://shw64.tistory.com/56?category=1265170) | 그리디 | Lv3 |
+| [단체사진 찍기](https://programmers.co.kr/learn/courses/30/lessons/1835) | [코드](Programmers/Permutation/Permutation/PRO1835.cpp) |  | 순열 | Lv2 |
