@@ -1,3 +1,9 @@
+/*
+    í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ [ì†Œìˆ˜ ì°¾ê¸°]
+    https://programmers.co.kr/learn/courses/30/lessons/42839
+    ìˆœì—´, ì™„ì „íƒìƒ‰
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -10,7 +16,7 @@ using namespace std;
 set<int> s;
 
 bool isPrime(int n) {
-    if (n == 0 || n == 1) return false;  // 0,1Àº ¼Ò¼ö°¡ ¾Æ´Ô
+    if (n == 0 || n == 1) return false;  // 0,1ì€ ì†Œìˆ˜ê°€ ì•„ë‹˜
 
     for (int i = 2; i <= sqrt(n); i++) {
         if (n % i == 0) return false;
@@ -25,8 +31,8 @@ int solution(string numbers) {
     sort(numbers.begin(), numbers.end());
 
     do {
-        for (int i = 1; i <= numbers.size(); i++) {   // ¹®ÀÚ °³¼ö
-            for (int j = 0; j <= numbers.size() - i; j++) {    // ºÎºĞ¹®ÀÚ¿­ ½ÃÀÛ À§Ä¡
+        for (int i = 1; i <= numbers.size(); i++) {   // ë¬¸ì ê°œìˆ˜
+            for (int j = 0; j <= numbers.size() - i; j++) {    // ë¶€ë¶„ë¬¸ìì—´ ì‹œì‘ ìœ„ì¹˜
                 string ss = numbers.substr(j, i);
                 int num = stoi(ss);
                 cout << num << "\n";
