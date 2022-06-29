@@ -17,6 +17,7 @@
 | [BOJ7569](https://www.acmicpc.net/problem/7569) | [코드](BarkingDog/BFS/BFS/BOJ7569.cpp) | [토마토](https://shw64.tistory.com/49?category=1265170) | bfs | 골드5 |
 | [BOJ1182](https://www.acmicpc.net/problem/1182) | [코드](BarkingDog/BackTracking/BackTracking/BackTracking/BOJ1182.cpp) | [부분수열의 합](https://shw64.tistory.com/51?category=1265170) | 백트래킹 | 실버2 |
 | [BOJ20056](https://www.acmicpc.net/problem/20056) || [마법사 상어와 파이어볼](https://shw64.tistory.com/53?category=1265170) | 시뮬레이션 | 골드4 |
+| [BOJ1541](https://www.acmicpc.net/problem/1541) | [코드](BarkingDog/greedy/greedy/BOJ1541.cpp) || 수학 | 실버2 |
 
 ## 프로그래머스
 | 문제 | 정답 코드 | 풀이 | 풀이 유형 | 레벨 |
