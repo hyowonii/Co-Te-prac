@@ -19,6 +19,7 @@
 | [BOJ20056](https://www.acmicpc.net/problem/20056) || [마법사 상어와 파이어볼](https://shw64.tistory.com/53?category=1265170) | 시뮬레이션 | 골드4 |
 | [BOJ1541](https://www.acmicpc.net/problem/1541) | [코드](BarkingDog/greedy/greedy/BOJ1541.cpp) || 수학 | 실버2 |
 | [BOJ2751](https://www.acmicpc.net/problem/2751) | [코드](BarkingDog/Sort/Sort/BOJ2751.cpp) || 정렬 | 실버5 |
+| [BOJ1912](https://www.acmicpc.net/problem/1912) | [코드](BarkingDog/greedy/greedy/BOJ1912.cpp) || dp | 실버2 |
 
 
 
