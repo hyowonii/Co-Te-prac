@@ -21,6 +21,7 @@
 | [BOJ2751](https://www.acmicpc.net/problem/2751) | [코드](BarkingDog/Sort/Sort/BOJ2751.cpp) || 정렬 | 실버5 |
 | [BOJ1912](https://www.acmicpc.net/problem/1912) | [코드](BarkingDog/greedy/greedy/BOJ1912.cpp) || dp | 실버2 |
 | [BOJ1600](https://www.acmicpc.net/problem/1600) | [코드](BarkingDog/BFS/BFS/BOJ1600.cpp) || bfs | 골드3 |
+| [BOJ2004](https://www.acmicpc.net/problem/2004) | [코드](Baekjoon/Math/Math/BOJ2004.cpp) || 수학 | 실버2 |
 
 
 ## 프로그래머스
