@@ -22,7 +22,8 @@
 | [BOJ1912](https://www.acmicpc.net/problem/1912) | [코드](BarkingDog/greedy/greedy/BOJ1912.cpp) || dp | 실버2 |
 | [BOJ1600](https://www.acmicpc.net/problem/1600) | [코드](BarkingDog/BFS/BFS/BOJ1600.cpp) || bfs | 골드3 |
 | [BOJ2004](https://www.acmicpc.net/problem/2004) | [코드](Baekjoon/Math/Math/BOJ2004.cpp) | [조합 0의 개수](https://shw64.tistory.com/62) | 수학 | 실버2 |
-
+| [BOJ1941](https://www.acmicpc.net/problem/1941) | [코드](BarkingDog/BackTracking/BackTracking/BackTracking/BOJ1941.cpp) || 백트래킹 | 골드3 |
+| [BOJ2910](https://www.acmicpc.net/problem/2910) | [코드](BarkingDog/Sort/Sort/BOJ2910.cpp) || 정렬 | 실버3 |
 
 ## 프로그래머스
 | 문제 | 정답 코드 | 풀이 | 풀이 유형 | 레벨 |
