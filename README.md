@@ -35,3 +35,4 @@
 | [PRO42839](https://programmers.co.kr/learn/courses/30/lessons/42839) | [코드](Programmers/Permutation/Permutation/PRO42839.cpp) | [소수 찾기](https://shw64.tistory.com/60) | 순열, 완전탐색 | Lv2 |
 | [PRO42579](https://programmers.co.kr/learn/courses/30/lessons/42579) | [코드](Programmers/Hash/Hash/PRO42579.cpp) |  | 해시 | Lv3 |
 | [PRO49189](https://programmers.co.kr/learn/courses/30/lessons/49189) | [코드](Programmers/Graph/Graph/PRO49189.cpp) |  | 그래프 | Lv3 |
+| [PRO12973](https://programmers.co.kr/learn/courses/30/lessons/12973) | [코드](Programmers/Stack/Stack/PRO12973.cpp) | [짝지어 제거하기](https://shw64.tistory.com/63) | stack | Lv2 |
