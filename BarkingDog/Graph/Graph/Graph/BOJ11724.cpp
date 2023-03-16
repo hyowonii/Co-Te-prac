@@ -1,5 +1,5 @@
 /*
-	¹éÁØ [¿¬°á ¿ä¼ÒÀÇ °³¼ö]
+	ë°±ì¤€ [ì—°ê²° ìš”ì†Œì˜ ê°œìˆ˜]
 	https://www.acmicpc.net/problem/11724
 	bfs
 */
@@ -10,39 +10,39 @@
 
 using namespace std;
 
-int N, M;
-vector<int> adj[1005];
-bool vis[1005];
+int N;	// ì •ì  ê°œìˆ˜
+int M;	// ê°„ì„  ê°œìˆ˜
+vector<int> b[1001];
+bool vis[1001];
 int result = 0;
 
-int main(void) {
+int main(void){
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
 	cin >> N >> M;
-	for (int i = 0; i < M; i++) {
+	while(M--){
 		int u, v;
 		cin >> u >> v;
-		adj[u].push_back(v);
-		adj[v].push_back(u);
+		b[u].push_back(v);
+		b[v].push_back(u);
 	}
 
-	// BFS
-	for (int i = 1; i <= N; i++) {
-		if (vis[i]) continue;
-		queue<int> Q;
-		Q.push(i);
-		vis[i] = true;	// ¹æ¹®
-		while (!Q.empty()) {	// ¿¬°áµÈ Á¤Á¡ ´Ù È®ÀÎ
-			int cur = Q.front(); Q.pop();
-			for (auto nxt : adj[cur]) {
-				if (vis[nxt]) continue;
-				Q.push(nxt);
-				vis[nxt] = true;
+
+	for(int i=1; i<=N; i++){
+		if(vis[i] == true) continue;
+		queue<int> q;
+		q.push(i);	vis[i] = true;	// íì— ë„£ì„ ë•Œ í™•ì‹¤íˆ ë°©ë¬¸
+		while(!q.empty()){
+			int cur = q.front();	q.pop();	
+			for(auto nxt : b[cur]){
+				if(vis[nxt] == true) continue;
+				q.push(nxt);	vis[nxt] = true;
 			}
 		}
 		result++;
 	}
 
 	cout << result;
+
 }
