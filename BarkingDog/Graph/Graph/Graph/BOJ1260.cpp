@@ -1,88 +1,100 @@
 /*
-	¹éÁØ [DFS¿Í BFS]
+	ë°±ì¤€ [DFSì™€ BFS]
 	https://www.acmicpc.net/problem/1260
 	dfs, bfs
 */
 
 #include <iostream>
 #include <vector>
+#include <stack>
 #include <queue>
 #include <algorithm>
-#include <stack>
-
 using namespace std;
 
-int N, M, V;
-vector<int> adj[1005];
-bool vis[1005];
+int N;	// ì •ì  ê°œìˆ˜
+int M;	// ê°„ì„  ê°œìˆ˜
+int S;	// ì‹œì‘ ì •ì 
+vector<int> b[1005];
 
-// ºñÀç±Í dfs
-void dfs_nonRecurse() {
+bool vvis[1005];	// ì¬ê·€dfs
+
+void dfs(){
+	bool vis[1005];
+	fill(vis, vis + N + 1, false);
+
 	stack<int> s;
-	s.push(V);
-	while (!s.empty()) {
-		int cur = s.top(); s.pop();
-		if (vis[cur]) continue;
-		vis[cur] = true;
-		cout << cur << " ";
+	s.push(S);
 
-		for (int i = 0; i < adj[cur].size(); i++) {
-			int nxt = adj[cur][adj[cur].size() - 1 - i];	// ½ºÅÃ -> Á¤Á¡À» ¿ª¼øÀ¸·Î ³Ö¾î¾ß ÇÔ
-			if (vis[nxt]) continue;
+	vector<int> v;
+
+	while(!s.empty()){
+		int cur = s.top();	s.pop();
+		if(vis[cur]) continue;
+		vis[cur] = true;
+		v.push_back(cur);
+
+		for(int i=0; i<b[cur].size(); i++){
+			int nxt = b[cur][b[cur].size()-1-i];
+			if(vis[nxt]) continue;
 			s.push(nxt);
 		}
 	}
+
+	for(int i=0; i<v.size(); i++) cout << v[i] << " ";
 }
 
-// Àç±Í dfs
-void dfs(int cur) {
-
-	if (vis[cur]) return;
-
-	vis[cur] = true;	// ¹æ¹®
+// ì¬ê·€ dfs
+void dfs2(int cur){
+	vvis[cur] = true;
 	cout << cur << " ";
-	for (auto nxt : adj[cur]) {
-		if (vis[nxt]) continue;
-		dfs(nxt);
-		//		vis[nxt] = true;	// ¾ø¾îµµ µÊ
+	for(auto nxt : b[cur]){
+		if(vvis[nxt]) continue;
+		dfs2(nxt);
 	}
 }
 
-void bfs() {
-	queue<int> Q;
-	Q.push(V);	// ½ÃÀÛ Á¤Á¡
-	cout << V << " ";	// Ãâ·Â
-	while (!Q.empty()) {
-		int cur = Q.front(); Q.pop();
-		vis[cur] = true;	// ¹æ¹®
-		for (auto nxt : adj[cur]) {	// ÇöÀç È®ÀÎÇÏ´Â Á¤Á¡¿¡ ¿¬°áµÈ ´Ù¸¥ Á¤Á¡µé
-			if (vis[nxt]) continue;
-			cout << nxt << " ";
-			Q.push(nxt);
-			vis[nxt] = true;
+void bfs(){
+	bool vis[1005];
+	fill(vis, vis + N + 1, false);
+
+	queue<int> q;
+	q.push(S);	vis[S] = true;
+
+	vector<int> v;
+	v.push_back(S);
+
+	while(!q.empty()){
+		int cur = q.front();	q.pop();
+
+		for(auto nxt : b[cur]){
+			if(vis[nxt]) continue;
+			v.push_back(nxt);
+			q.push(nxt);	vis[nxt] = true;
 		}
 	}
+
+	for(int i=0; i<v.size(); i++) cout << v[i] << " ";
 }
 
-int main(void) {
+int main(void){
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	cin >> N >> M >> V;
-	while (M--) {
+	cin >> N >> M >> S;
+	while(M--){
 		int u, v;
 		cin >> u >> v;
-		adj[u].push_back(v); sort(adj[u].begin(), adj[u].end());
-		adj[v].push_back(u); sort(adj[v].begin(), adj[v].end());
+		b[u].push_back(v);
+		b[v].push_back(u);
 	}
 
-	// DFS
-//	dfs_nonRecurse();
-	dfs(V);
+	for(int i=0; i<=N; i++) sort(b[i].begin(), b[i].end());
 
-	fill_n(vis, 1005, 0);
+	fill(vvis, vvis+N+1, false); //	ì¬ê·€dfs
+
+	// dfs();
+	dfs2(S);
 	cout << "\n";
-
-	// BFS
 	bfs();
+
 }
