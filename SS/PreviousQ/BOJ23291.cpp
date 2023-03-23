@@ -1,5 +1,8 @@
 /*
   죽어도 이해 안되는 공중부양1........
+  해결 못함
+
+  해결함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 
 #include <iostream>
@@ -85,7 +88,20 @@ void layDown(){
 
 // 공중부양1****
 void move1(){
-  
+  int pivot=1, w=1, h=1;  // 한 단계 앞선 피봇
+  for(int idx=0; ; idx++){
+    if(pivot + h > n) break;
+    // pivot 위치에 w*h 쌓아올리기
+    for(int a = n-1; a > n-1 - h; a--){
+      for(int b = pivot - w; b < pivot; b++){
+        cage[n-1-pivot+b][pivot-a+n-1] = cage[a][b];
+        cage[a][b] = 0;
+      }
+    }
+    pivot += h;
+    if(idx % 2 == 0) h++;
+    else w++;
+  }
 }
 
 // 공중부양2
@@ -132,6 +148,8 @@ int main(void){
 
   findMxMn();
 
+  // move1();
+  // print("move1");
 
   while(mx - mn > k){
 
@@ -139,31 +157,31 @@ int main(void){
     for(int j=0; j<n; j++){
       if(cage[n-1][j] == mn) cage[n-1][j] += 1;
     }
-    print("1씩 더하기");
+    // print("1씩 더하기");
 
     // 2. 어항 쌓기1(공중부양)****
     move1();
-    print("move1");
+    // print("move1");
 
     // 3. 물고기 수 조절
     bal();
-    print("수 정렬1");
+    // print("수 정렬1");
 
     // 4. 일렬로 놓기
     layDown();
-    print("일렬로1");
+    // print("일렬로1");
 
     // 5. 공중부양2
     move2();
-    print("move2");
+    // print("move2");
 
     // 6. 물고기 수 조절
     bal();
-    print("수정렬2");
+    // print("수정렬2");
 
     // 7. 일렬로 놓기
     layDown();
-    print("일렬로2");
+    // print("일렬로2");
 
     findMxMn();
     cnt++;
