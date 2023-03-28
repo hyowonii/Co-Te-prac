@@ -38,4 +38,5 @@
 | [PRO49189](https://programmers.co.kr/learn/courses/30/lessons/49189) | [코드](Programmers/Graph/Graph/PRO49189.cpp) |  | 그래프 | Lv3 |
 | [PRO12973](https://programmers.co.kr/learn/courses/30/lessons/12973) | [코드](Programmers/Stack/Stack/PRO12973.cpp) | [짝지어 제거하기](https://shw64.tistory.com/63) | stack | Lv2 |
 | [PRO1844](https://programmers.co.kr/learn/courses/30/lessons/1844) | [코드](Programmers/BFS(DFS)/BFS(DFS)/PRO1844.cpp) |  | BFS | Lv2 |
+| [PRO86971](https://school.programmers.co.kr/learn/courses/30/lessons/86971) | [코드](Programmers/Bruteforce/PRO86971.cpp) |  | 완전탐색 | Lv2 |
 
