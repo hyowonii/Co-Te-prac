@@ -36,9 +36,9 @@
 | [PRO42884](https://programmers.co.kr/learn/courses/30/lessons/42884) | [코드](Programmers/Greedy/Greedy/PRO42884.cpp) | [단속카메라](https://shw64.tistory.com/56?category=1265170) | 그리디 | Lv3 |
 | [PRO1835](https://programmers.co.kr/learn/courses/30/lessons/1835) | [코드](Programmers/Permutation/Permutation/PRO1835.cpp) | [단체사진 찍기](https://shw64.tistory.com/59?category=1265170) | 순열 | Lv2 |
 | [PRO42839](https://programmers.co.kr/learn/courses/30/lessons/42839) | [코드](Programmers/Permutation/Permutation/PRO42839.cpp) | [소수 찾기](https://shw64.tistory.com/60) | 순열, 완전탐색 | Lv2 |
-| [PRO42579](https://programmers.co.kr/learn/courses/30/lessons/42579) | [코드](Programmers/Hash/Hash/PRO42579.cpp) |  | 해시 | Lv3 |
-| [PRO49189](https://programmers.co.kr/learn/courses/30/lessons/49189) | [코드](Programmers/Graph/Graph/PRO49189.cpp) |  | 그래프 | Lv3 |
-| [PRO12973](https://programmers.co.kr/learn/courses/30/lessons/12973) | [코드](Programmers/Stack/Stack/PRO12973.cpp) | [짝지어 제거하기](https://shw64.tistory.com/63) | stack | Lv2 |
-| [PRO1844](https://programmers.co.kr/learn/courses/30/lessons/1844) | [코드](Programmers/BFS(DFS)/BFS(DFS)/PRO1844.cpp) |  | BFS | Lv2 |
-| [PRO86971](https://school.programmers.co.kr/learn/courses/30/lessons/86971) | [코드](Programmers/Bruteforce/PRO86971.cpp) |  | 완전탐색 | Lv2 |
-
+| [PRO42579](https://programmers.co.kr/learn/courses/30/lessons/42579) | [코드](Programmers/Hash/Hash/PRO42579.cpp) || 해시 | Lv3 |
+| [PRO49189](https://programmers.co.kr/learn/courses/30/lessons/49189) | [코드](Programmers/Graph/Graph/PRO49189.cpp) || 그래프 | Lv3 |
+| [PRO12973](https://programmers.co.kr/learn/courses/30/lessons/12973) | [코드](Programmers/Stack/Stack/PRO12973.cpp) |[짝지어 제거하기](https://shw64.tistory.com/63) | stack | Lv2 |
+| [PRO1844](https://programmers.co.kr/learn/courses/30/lessons/1844) | [코드](Programmers/BFS(DFS)/BFS(DFS)/PRO1844.cpp) || BFS | Lv2 |
+| [PRO86971](https://school.programmers.co.kr/learn/courses/30/lessons/86971) | [코드](Programmers/Bruteforce/PRO86971.cpp) || 완전탐색 | Lv2 |
+| [PRO81301]() | [코드](Programmers/String/String/PRO81301.cpp) || 문자열 | Lv1 |
