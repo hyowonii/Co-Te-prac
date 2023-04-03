@@ -34,7 +34,7 @@ void init(){
 
 // 주사위 돌아간 면 계산
 void rollDice(){
-  int tmp;
+  // 내코드
   if(dir == 0){ // 동쪽으로 회전
     int tmp0 = diceMap[3][1];
     int tmp1 = diceMap[1][0];
@@ -75,6 +75,11 @@ void rollDice(){
     diceMap[1][1] = tmp2;
     diceMap[2][1] = tmp3;
   }
+
+  // 개선 코드
+  int up, down, left, right, fron, back;
+  // 6개의 수를 모두 저장한 다음 케이스별로 업뎃
+  // dice를 일차원배열로 둬도 됨
 }
 
 // 1. 주사위 이동 방향으로 한 칸 이동 + **주사위 돌아간 면 계산**
