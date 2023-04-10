@@ -1,5 +1,5 @@
 /*
-  백준 [군형잡힌 세상]
+  백준 [균형잡힌 세상]
   https://www.acmicpc.net/problem/4949
   stack
 */
@@ -12,33 +12,41 @@ int main(void){
   ios::sync_with_stdio(0);
   cin.tie(0);
 
-  while(true){
+  while(1){
     string str;
     getline(cin, str);
     if(str[0] == '.') break;
 
-    stack<char> s;
+    stack<char> S;
     string result = "yes";
-    
+
     for(auto c : str){
-      if(c == '(') s.push('(');
-      if(c == '[') s.push('[');
+      if(c == '('){
+        S.push('(');
+      }
+      if(c == '['){
+        S.push('[');
+      }
       if(c == ')'){
-        if(!s.empty() && s.top() == '(') s.pop();
-        else {
+        if(!S.empty() && S.top() == '('){
+          S.pop();
+        }
+        else{
           result = "no";
           break;
         }
       }
       if(c == ']'){
-        if(!s.empty() && s.top() == '[') s.pop();
-        else {
+        if(!S.empty() && S.top() == '['){
+          S.pop();
+        }
+        else{
           result = "no";
           break;
         }
       }
     }
-    if(!s.empty()) result = "no";
+    if(!S.empty()) result = "no";
     cout << result << "\n";
   }
 }
