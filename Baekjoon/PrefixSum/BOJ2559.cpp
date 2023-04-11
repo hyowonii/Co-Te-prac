@@ -1,7 +1,7 @@
 /*
   백준 [수열]
   https://www.acmicpc.net/problem/2559
-  투포인터, 누적합
+  투포인터
 */
 
 #include <iostream>
