@@ -1,7 +1,7 @@
 /*
   백준 [구간 자르기]
   https://www.acmicpc.net/problem/2283
-
+  투포인터
 */
 
 #include <iostream>
