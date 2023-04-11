@@ -1,5 +1,5 @@
 /*
-    ÇÁ·Î±×·¡¸Ó½º [Å« ¼ö ¸¸µé±â]
+    ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½Ó½ï¿½ [Å« ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½]
     https://programmers.co.kr/learn/courses/30/lessons/42883?language=cpp
     greedy
 */
@@ -12,17 +12,17 @@ using namespace std;
 string solution(string number, int k) {
     string answer = "";
 
-    int n = number.length() - k;    // ¸¸µé¾î¾ß ÇÏ´Â ÀÚ¸®¼ö
-
-    for (int i = 0, idx = -1; i < n; i++) {
-        char max = '0';
-        for (int j = idx + 1; j <= k + i; j++) {  // k+j±îÁö°¡ Áö¿ï ¼ö ÀÖ´Â ÃÖ¼Ò ÀÚ¸®
-            if (max < number[j]) {
-                max = number[j];
-                idx = j;
-            }
+    int num = number.size() - k;
+    int idx = number.size() - num;  // ì‹œìž‘ ì¸ë±ìŠ¤
+    int fin = 0;    // í¬ë¬¸ ì¢…ë£Œ
+    while(fin < number.size() && answer.size() < num){
+        int des = idx;
+        for(int i=idx; i>=fin; --i){
+            if(number[i] >= number[des]) des = i;
         }
-        answer += max;
+        answer += number[des];
+        fin = des+1;
+        idx++;
     }
 
     return answer;
