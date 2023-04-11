@@ -34,7 +34,7 @@
 | [괄호 추가하기](https://www.acmicpc.net/problem/16637) | | | |
 | [문자해독](https://www.acmicpc.net/problem/1593) | | | |
 | [수열](https://www.acmicpc.net/problem/2559) |✔️ | | |
-| [구간 합 구하기4](https://www.acmicpc.net/problem/11659) | | | |
+| [구간 합 구하기4](https://www.acmicpc.net/problem/11659) |✔️ | | |
 | [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | | | |
 | [DFS와 BFS](https://www.acmicpc.net/problem/1260) | | | |
 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | | | |
