@@ -98,7 +98,7 @@
 | [RGB거리](https://www.acmicpc.net/problem/1149) | | | |
 | [RGB거리2](https://www.acmicpc.net/problem/17404) | | | |
 | [괄호](https://www.acmicpc.net/problem/9012) | | | |
-| [균형잡힌 세상](https://www.acmicpc.net/problem/4949) | | | |
+| [균형잡힌 세상](https://www.acmicpc.net/problem/4949) |✔️ | | |
 | [트리](https://www.acmicpc.net/problem/1068) | | | |
 | [완전 이진 트리](https://www.acmicpc.net/problem/9934) | | | |
 | [숫자 카드 2](https://www.acmicpc.net/problem/10816) | | | |
