@@ -1,5 +1,5 @@
 /*
-	ÇÁ·Î±×·¡¸Ó½º [´Ü¼ÓÄ«¸Ş¶ó]
+	í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ [ë‹¨ì†ì¹´ë©”ë¼]
 	https://programmers.co.kr/learn/courses/30/lessons/42884
 	greedy
 */
@@ -11,55 +11,19 @@
 using namespace std;
 
 int solution(vector<vector<int>> routes) {
-    int answer = 0;
-
-    sort(routes.begin(), routes.end()); // *Á¤·Ä*
-
-    bool checked[10005] = { 0 };
-
-    for (int i = 0; i < routes.size(); i++) {
-        if (checked[i] == true) continue;
-        int cura = routes[i][0];
-        int curb = routes[i][1];
-        for (int j = i + 1; j < routes.size(); j++) {
-            if (checked[j] == true) continue;
-            int newa = routes[j][0];
-            int newb = routes[j][1];
-            if ((cura <= newa && newa <= curb) || (cura <= newb && newb <= curb)) {   // ¹üÀ§ °ãÄ¡¸é
-                cura = max(cura, newa);
-                curb = min(curb, newb);
-                checked[i] = true;
-                checked[j] = true;
-            }
-        }
-        checked[i] = true;
-        answer++;
-    }
-
-    return answer;
-}
-
-
-// ´õ °£´ÜÇÑ Ç®ÀÌ
-
-int solution2(vector<vector<int>> routes) {
-    //±âº» Ä«¸Ş¶ó 1´ë
     int answer = 1;
-    //µé¾î¿Â ¸®½ºÆ® Á¤·Ä
+    
     sort(routes.begin(), routes.end());
-    //ºñ±³¸¦ À§ÇØ Ã³À½Â÷°¡ ³ª°¡´Â ºÎºĞ Ã¼Å©
-    int temp = routes[0][1];
-    //¸®½ºÆ® ¼øÈ¸ÇÏ±â
-    for (auto a : routes) {
-        //ÇöÀç Â÷°¡ ³ª°¡´Â ºÎºĞº¸´Ù µÚ¿¡ Â÷°¡ µé¾î¿Â´Ù¸é
-        if (temp < a[0]) {
-            //Ä«¸Ş¶ó ¼³Ä¡
+    int temp = routes[0][1];    // ì—˜ë¦¬ë² ì´í„° ì„¤ì¹˜ ìœ„ì¹˜ ì €ì¥ ë³€ìˆ˜
+    
+    for(int i=1; i<routes.size(); i++){
+        if(temp < routes[i][0]){
             answer++;
-            //³ª°¡´Â ºÎºĞ Á¤Á¤
-            temp = a[1];
+            temp = routes[i][1];    
         }
-        //ÇöÀç Â÷º¸´Ù µÚÂ÷°¡ ¸ÕÀú³ª°¡¸é 
-        if (temp >= a[1])    temp = a[1];// ³ª°¡´Â ºÎºĞÀ» µŞÂ÷·Î ¼öÁ¤
+        if(temp >= routes[i][1])
+            temp = routes[i][1];
     }
+    
     return answer;
 }
