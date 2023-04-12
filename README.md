@@ -27,6 +27,7 @@
 | [BOJ10825](https://www.acmicpc.net/problem/10825) | [코드](Baekjoon/Sort/BOJ10825.cpp) || 정렬 | 실버4 |
 | [BOJ11725](https://www.acmicpc.net/problem/11725) | [코드](BarkingDog/Tree/BOJ11725.cpp) || 트리(재귀) | 실버2 |
 | [BOJ1991](https://www.acmicpc.net/problem/1991) | [코드](BarkingDog/Tree/BOJ1991.cpp) || 트리(재귀순회) | 실버1 |
+| [BOJ11053](https://www.acmicpc.net/problem/11053) | [코드](Baekjoon/DP/BOJ11053.cpp) | [가장 긴 증가하는 부분수열](https://shw64.tistory.com/69) | dp | 실버2 |
 
 ## 프로그래머스
 | 문제 | 정답 코드 | 풀이 | 풀이 유형 | 레벨 |
