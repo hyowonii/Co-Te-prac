@@ -87,8 +87,8 @@
 | [리모컨](https://www.acmicpc.net/problem/1107) | | | |
 | [마인크래프트](https://www.acmicpc.net/problem/18111) | | | |
 | [부등호](https://www.acmicpc.net/problem/2529) | | | |
-| [퇴사](https://www.acmicpc.net/problem/14501) | | | |
-| [연속합](https://www.acmicpc.net/problem/1912) | | | |
+| [퇴사](https://www.acmicpc.net/problem/14501) |✔️ | | |
+| [연속합](https://www.acmicpc.net/problem/1912) |✔️ | | |
 | [피보나치 수 1](https://www.acmicpc.net/problem/24416) | | | |
 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | | | |
 | [01타일](https://www.acmicpc.net/problem/1904) | | | |
