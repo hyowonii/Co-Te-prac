@@ -21,7 +21,7 @@
 | [팰린드롬 만들기](https://www.acmicpc.net/problem/1213) | | | |
 | [곱셈](https://www.acmicpc.net/problem/1629) | | | |
 | [빈도 정렬](https://www.acmicpc.net/problem/2910) | | | |
-| [수학 숙제](https://www.acmicpc.net/problem/2870) | | | |
+| [수학 숙제](https://www.acmicpc.net/problem/2870) |✔️ | | |
 | [교수가 된 현우](https://www.acmicpc.net/problem/3474) | | | |
 | [1](https://www.acmicpc.net/problem/4375) | | | |
 | [NBA 농구](https://www.acmicpc.net/problem/2852) | | | |
