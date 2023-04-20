@@ -55,5 +55,12 @@ int main(void){
   cout << "순열 (순서o, 중복o)\n";
   duplicatePermutation(0);
 
+  int a[5] = {0,1,1,1,1};
+  do{
+    for(int i=0; i<5; i++)
+      if(a[i] == 0) cout << i << " ";
+    cout << "\n";
+  }while(next_permutation(a, a+5));
+
   return 0;
 }
