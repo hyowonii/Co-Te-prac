@@ -15,7 +15,7 @@
 | [분수 찾기](https://www.acmicpc.net/problem/1193) |✔️ | | |
 | [손익분기점](https://www.acmicpc.net/problem/1712) | | | |
 | [공](https://www.acmicpc.net/problem/1547) | | | |
-| [ATM](https://www.acmicpc.net/problem/11399) | | | |
+| [ATM](https://www.acmicpc.net/problem/11399) |✔️ | | |
 | [단어 정렬](https://www.acmicpc.net/problem/1181) | | | |
 | [나이순 정렬](https://www.acmicpc.net/problem/10814)| | | |
 | [팰린드롬 만들기](https://www.acmicpc.net/problem/1213) | | | |
