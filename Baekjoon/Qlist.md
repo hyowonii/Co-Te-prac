@@ -101,7 +101,7 @@
 | [균형잡힌 세상](https://www.acmicpc.net/problem/4949) |✔️ | | |
 | [트리](https://www.acmicpc.net/problem/1068) | | | |
 | [완전 이진 트리](https://www.acmicpc.net/problem/9934) | | | |
-| [숫자 카드 2](https://www.acmicpc.net/problem/10816) | | | |
+| [숫자 카드 2](https://www.acmicpc.net/problem/10816) |✔️ | | |
 | [수 찾기](https://www.acmicpc.net/problem/1920) | | | |
 | [나무 자르기](https://www.acmicpc.net/problem/2805) | | | |
 | [랜선 자르기](https://www.acmicpc.net/problem/1654) |✔️ | | |
